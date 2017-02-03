@@ -71,3 +71,12 @@ To secure the CSP violations viewer, you can add the following to your `security
 ```
 
 Now only users with the role ROLE_ADMIN will be able to access the CSP violations viewer at this url: `/csp/logs`
+
+
+
+
+## Screenshots
+### Violations viewer
+![CSP Violations Log Viewer](https://i.imgur.com/hpdszjP.png)
+
+
