@@ -51,6 +51,15 @@ sockam_csp_logger:
 
 You can customize the prefix as you wish.
 
+### Update your database schema:
+
+``` shell
+$ php bin/console doctrine:schema:update --force
+```
+
+
+
+
 You can now use `/csp/log` endpoint in your CSP headers: 
 You can now access the dashboard at this url: `/csp/logs`
 
