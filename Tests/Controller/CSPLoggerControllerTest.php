@@ -4,17 +4,17 @@ namespace Sockam\CSPLoggerBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class DefaultControllerTest extends WebTestCase
+class CSPLoggerControllerTest extends WebTestCase
 {
     public function testIndex()
     {
         $method = 'POST';
         $uri = '/csp/log';
-        $parameters = array();
-        $files = array();
-        $server = array(
+        $parameters = [];
+        $files = [];
+        $server = [
             'CONTENT_TYPE' => 'application/json',
-        );
+        ];
         $content = <<<'JSON'
     {
   "csp-report": {
