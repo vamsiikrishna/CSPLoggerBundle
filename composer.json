@@ -9,5 +9,13 @@
             "email": "vamsi@fastmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sockam\\CSPLoggerBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
 }
