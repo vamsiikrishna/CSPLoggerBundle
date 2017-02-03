@@ -1,0 +1,33 @@
+{% extends "@SockamCSPLogger/CSPLogs/base.html.twig" %}
+{% block title %}CSP Logs {% endblock title %}
+{% block body %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ path('sockam_csp_logger_logs_index') }}">CSP Logs</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <table class=" table table-bordered table-condensed">
+            <thead>
+            <tr>
+                <td>Date</td>
+                <td>URI</td>
+                <td>Directive</td>
+                <td>Blocked URI</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for log in logs %}
+                <tr>
+                    <td>{{ log.dateReceived|date }}</td>
+                    <td>{{ log.documentUri }}</td>
+                    <td>{{ log.violatedDirective }}</td>
+                    <td>{{ log.blockedUri }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock body %}

@@ -1,0 +1,13 @@
+{
+    "name": "sockam/csp-logger-bundle",
+    "description": "A Symfony Bundle that can collect reports from CSP",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vamsi Krishna B",
+            "email": "vamsi@fastmail.com"
+        }
+    ],
+    "require": {}
+}

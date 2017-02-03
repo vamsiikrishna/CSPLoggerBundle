@@ -1,0 +1,9 @@
+sockam_csp_logger_log:
+    path:     /log
+    defaults: { _controller: SockamCSPLoggerBundle:CSPLogger:log }
+    methods: POST
+
+sockam_csp_logger_logs_index:
+    path: /logs
+    defaults: { _controller: SockamCSPLoggerBundle:CSPLogger:logs }
+    methods: GET
