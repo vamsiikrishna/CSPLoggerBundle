@@ -26,11 +26,11 @@ class CSPReportType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
-            'data_class' => 'Sockam\CSPLoggerBundle\Entity\CSPReport',
-            'csrf_protection' => false,
-            'allow_extra_fields' => true
-        ));
+        $resolver->setDefaults([
+            'data_class'         => 'Sockam\CSPLoggerBundle\Entity\CSPReport',
+            'csrf_protection'    => false,
+            'allow_extra_fields' => true,
+        ]);
     }
 
     /**
@@ -40,6 +40,4 @@ class CSPReportType extends AbstractType
     {
         return 'sockam_csploggerbundle_cspreport';
     }
-
-
 }

@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * CSPReport
+ * CSPReport.
  *
  * @ORM\Table(name="c_s_p_report")
  * @ORM\Entity(repositoryClass="Sockam\CSPLoggerBundle\Repository\CSPReportRepository")
@@ -77,9 +77,8 @@ class CSPReport
      */
     private $userAgent;
 
-
     /**
-     * Get id
+     * Get id.
      *
      * @return int
      */
@@ -89,7 +88,7 @@ class CSPReport
     }
 
     /**
-     * Set documentUri
+     * Set documentUri.
      *
      * @param string $documentUri
      *
@@ -103,7 +102,7 @@ class CSPReport
     }
 
     /**
-     * Get documentUri
+     * Get documentUri.
      *
      * @return string
      */
@@ -113,7 +112,7 @@ class CSPReport
     }
 
     /**
-     * Set referrer
+     * Set referrer.
      *
      * @param string $referrer
      *
@@ -127,7 +126,7 @@ class CSPReport
     }
 
     /**
-     * Get referrer
+     * Get referrer.
      *
      * @return string
      */
@@ -137,7 +136,7 @@ class CSPReport
     }
 
     /**
-     * Set blockedUri
+     * Set blockedUri.
      *
      * @param string $blockedUri
      *
@@ -151,7 +150,7 @@ class CSPReport
     }
 
     /**
-     * Get blockedUri
+     * Get blockedUri.
      *
      * @return string
      */
@@ -161,7 +160,7 @@ class CSPReport
     }
 
     /**
-     * Set violatedDirective
+     * Set violatedDirective.
      *
      * @param string $violatedDirective
      *
@@ -175,7 +174,7 @@ class CSPReport
     }
 
     /**
-     * Get violatedDirective
+     * Get violatedDirective.
      *
      * @return string
      */
@@ -185,7 +184,7 @@ class CSPReport
     }
 
     /**
-     * Set originalPolicy
+     * Set originalPolicy.
      *
      * @param string $originalPolicy
      *
@@ -199,7 +198,7 @@ class CSPReport
     }
 
     /**
-     * Get originalPolicy
+     * Get originalPolicy.
      *
      * @return string
      */
@@ -209,7 +208,7 @@ class CSPReport
     }
 
     /**
-     * Set dateReceived
+     * Set dateReceived.
      *
      * @param \DateTime $dateReceived
      *
@@ -223,7 +222,7 @@ class CSPReport
     }
 
     /**
-     * Get dateReceived
+     * Get dateReceived.
      *
      * @return \DateTime
      */
@@ -233,7 +232,7 @@ class CSPReport
     }
 
     /**
-     * Set senderIp
+     * Set senderIp.
      *
      * @param string $senderIp
      *
@@ -247,7 +246,7 @@ class CSPReport
     }
 
     /**
-     * Get senderIp
+     * Get senderIp.
      *
      * @return string
      */
@@ -257,7 +256,7 @@ class CSPReport
     }
 
     /**
-     * Set userAgent
+     * Set userAgent.
      *
      * @param string $userAgent
      *
@@ -271,7 +270,7 @@ class CSPReport
     }
 
     /**
-     * Get userAgent
+     * Get userAgent.
      *
      * @return string
      */
@@ -280,4 +279,3 @@ class CSPReport
         return $this->userAgent;
     }
 }
-

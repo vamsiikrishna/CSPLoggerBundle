@@ -27,22 +27,22 @@ class CSPLoggerController extends Controller
                 $csp_report->setDateReceived(new \DateTime());
                 $csp_report->setSenderIp($request->getClientIp());
                 $csp_report->setUserAgent($request->headers->get('User-Agent'));
-                $em = $this->get("doctrine.orm.default_entity_manager");
+                $em = $this->get('doctrine.orm.default_entity_manager');
                 $em->persist($csp_report);
                 $em->flush($csp_report);
+
                 return new Response($csp_report->getId());
             } else {
-                return new Response("OOPS");
+                return new Response('OOPS');
             }
-
         }
     }
 
     public function logsAction(Request $request)
     {
-        $em = $this->get("doctrine.orm.default_entity_manager");
-        $logs = $em->getRepository("SockamCSPLoggerBundle:CSPReport")->findBy(array(), array('dateReceived' => 'desc'));
-        return $this->render('@SockamCSPLogger/CSPLogs/logs.html.twig', array('logs' => $logs));
+        $em = $this->get('doctrine.orm.default_entity_manager');
+        $logs = $em->getRepository('SockamCSPLoggerBundle:CSPReport')->findBy([], ['dateReceived' => 'desc']);
 
+        return $this->render('@SockamCSPLogger/CSPLogs/logs.html.twig', ['logs' => $logs]);
     }
 }
