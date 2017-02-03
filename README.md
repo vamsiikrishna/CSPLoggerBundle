@@ -1,5 +1,5 @@
 # Intro to SockamCSPLoggerBundle
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9c916ced-0f13-4c81-9017-32d7496f1cf5/big.png)](https://insight.sensiolabs.com/projects/9c916ced-0f13-4c81-9017-32d7496f1cf5)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9c916ced-0f13-4c81-9017-32d7496f1cf5/mini.png)](https://insight.sensiolabs.com/projects/9c916ced-0f13-4c81-9017-32d7496f1cf5) [![StyleCI](https://styleci.io/repos/80848917/shield?branch=master)](https://styleci.io/repos/80848917) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vamsiikrishna/CSPLoggerBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vamsiikrishna/CSPLoggerBundle/?branch=master)
 
 The SockamCSPLoggerBundle provides a basic service for logging  [content security policy](https://developer.mozilla.org/en-US/docs/Security/CSP) violations.
 
