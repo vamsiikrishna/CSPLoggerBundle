@@ -3,7 +3,7 @@
 namespace Sockam\CSPLoggerBundle\Controller;
 
 use Sockam\CSPLoggerBundle\Entity\CSPReport;
-use Sockam\CSPLoggerBundle\Form\CSPReportType;
+use Sockam\CSPLoggerBundle\Form\Type\CSPReportType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sockam\CSPLoggerBundle\Form;
+namespace Sockam\CSPLoggerBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
