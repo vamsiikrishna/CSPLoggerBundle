@@ -51,7 +51,7 @@ sockam_csp_logger:
 
 You can customize the prefix as you wish.
 
-You can now use `/csp/logs` endpoint in your CSP headers: 
+You can now use `/csp/log` endpoint in your CSP headers: 
 You can now access the dashboard at this url: `/csp/logs`
 
 To secure the CSP violations viewer, you can add the following to your `security.yml` - provided your administrator role is `ROLE_ADMIN`
