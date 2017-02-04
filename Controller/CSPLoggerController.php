@@ -24,6 +24,7 @@ class CSPLoggerController extends Controller
                 $em = $this->get('doctrine.orm.default_entity_manager');
                 $em->persist($csp_report);
                 $em->flush($csp_report);
+
                 return new Response($csp_report->getId());
             } else {
                 return new Response('OOPS');

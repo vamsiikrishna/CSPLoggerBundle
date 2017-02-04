@@ -15,20 +15,20 @@ class CSPReportType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('document-uri',TextType::class, [
-                'property_path' => 'documentUri'
+            ->add('document-uri', TextType::class, [
+                'property_path' => 'documentUri',
             ])
             ->add('referrer', TextType::class, [
-                'property_path' => 'referrer'
+                'property_path' => 'referrer',
             ])
             ->add('blocked-uri', TextType::class, [
-                'property_path' => 'blockedUri'
+                'property_path' => 'blockedUri',
             ])
             ->add('violated-directive', TextType::class, [
-                'property_path' => 'violatedDirective'
+                'property_path' => 'violatedDirective',
             ])
             ->add('original-policy', TextType::class, [
-                'property_path' => 'originalPolicy'
+                'property_path' => 'originalPolicy',
             ]);
     }
 
