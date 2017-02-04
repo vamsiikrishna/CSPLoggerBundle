@@ -16,7 +16,7 @@ Add `sockam/csp-logger-bundle` to your dependencies:
 {
     "require": {
         ...
-        "sockam/csp-logger-bundle": "^0.1.0"
+        "sockam/csp-logger-bundle": "^0.2.0"
     }
     ...
 }
